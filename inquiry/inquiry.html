@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공유인 | 메일 보내기</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="canonical" href="https://gongyuin.com/">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+<!--    <link rel="stylesheet" href="css/common.css">-->
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <div class="header-inner">
+            <h1><a href="../index.html"><span>공유인</span></a></h1>
+            <button class="menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div id="main">
+            <h2>견적의뢰</h2>
+            <div class="f-box">
+                <form class="gform" data-email="example@email.net" method="post" action="https://script.google.com/macros/s/AKfycby769iwDpCvuqRE_LhK8BDllETGMP4e-j9jW0eM3w/exec">
+                    <fieldset class="pure-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="이름" />
+                    </fieldset>
+                    <fieldset class="pure-group">
+                        <label for="tel">연락처</label>
+                        <input type="tel" id="tel" name="연락처" />
+                    </fieldset>
+                    <fieldset class="pure-group">
+                        <label for="email">이메일</label>
+                        <p>업무용 개인 이메일 주소를 입력하세요.</p>
+                        <input type="email" id="email" name="이메일" />
+                    </fieldset>
+                    <fieldset class="pure-group">
+                        <label for="field">업무분야</label>
+                        <input type="text" id="field" name="업무분야" placeholder="ex) IT업체, 학원, 병원, "/>
+                    </fieldset>
+                    <fieldset class="pure-group">
+                        <label for="message">상세 내용</label>
+                        <textarea name="기타문의" id="message" placeholder="의뢰하실 프로젝트 내용을 상세히 기입해 주세요."></textarea>
+                    </fieldset>
+                    <button class="button-success pure-button button-xlarge" onclick="gtag('event','버튼클릭',{'event_category':'폼페이지','event_label':'제출하기'});">
+                        <i class="fa fa-paper-plane"></i>확인
+                    </button>
+                    <div class="policy">
+                        <p>업무 내용 파악 후 담당자가 연락 예정입니다. </p>
+                        <span>평일 업무시간 (09시 ~ 18시) 1시간 내외 회신 예정</span>
+                        <span>주말 및 공휴일은 익일 오전 회신예정</span>
+                    </div>
+                    <div class="thankyou_message" style="display:none;">
+                        <h2>메일이 성공적으로 전송되었습니다.</h2>
+                    </div>
+                </form>
+            </div>
+        </div><!-- //#main -->
+    </main>
+
+
+    <!-- Script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+<!--    <script src="js/common.js"></script>-->
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

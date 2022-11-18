@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+main {
+	height: 100vh;
+}
+main > div {
+	height: 50vh;
+	text-align: center;
+	position: relative;
+}
+main .main-project {
+	background: linear-gradient(105.7deg, #1767E2 13.05%, #178FFF 89.81%);
+}
+main .main-gongyuin {
+	background: linear-gradient(108.02deg, #6600D8 19.56%, #7800FF 77.41%);
+
+}
+main .service, main p {
+	font-size: 1.4rem;
+}
+main h3 {
+	font-size: 3.8rem;
+	margin: 18px 0 24px;
+}
+main .main-txt-wrap {
+	position: absolute;
+	left: 50%; top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	z-index: 99;
+}
+main .detail-btn {
+	font-size: 1.8rem;
+	width: 200px; height: 44px;
+	line-height: 44px; text-align: center;
+	border-radius: 44px;
+	background-color: #fff;
+	font-weight: 500;
+	margin: 28px auto 0;
+}
+main .detail-btn a {
+	width: 100%;
+	display: block;
+}
+main .main-project .detail-btn {
+	color: #1780F4;
+}
+main .main-gongyuin .detail-btn {
+	color: #7501F9;
+}
+main .circle-wrap {
+	position: relative;
+	width: 100%; height: 50vh;
+}
+main .circle-wrap div {
+	position: absolute;
+	border-radius: 100%;
+	background: linear-gradient(218.03deg, rgba(255, 255, 255, 0.2) 27.12%, rgba(255, 255, 255, 0) 120.57%);
+	transform: .5s;
+}
+main .main-project .circle1 {
+	width: 13.889vw; height: 13.889vw;
+	top: 11.111vw; right: -3.889vw;
+}
+main .main-project .circle2 {
+	width: 4.167vw; height: 4.167vw;
+	top: 69.167vw; left: 9.167vw;
+}
+main .main-project .circle3 {
+	width: 8.889vw; height: 8.889vw;
+	bottom: 10.833vw; right: 13.333vw;
+}
+main .main-gongyuin .circle1 {
+	width: 5vw; height: 5vw;
+	top: 29.444vw; right: 8.333vw;
+}
+main .main-gongyuin .circle2 {
+	width: 8.333vw; height: 8.333vw;
+	top: 20vw; left: -2.722vw;
+}
+main .main-gongyuin .circle3 {
+	width: 19.444vw; height: 19.444vw;
+	bottom: -6.667vw; right: 12.500vw;
+}
+
+footer {
+	background: #fff;
+	color: #222;
+}
+.footer-inner > h2 .line {
+	-webkit-text-stroke: 1px #222;
+}
+.footer-inner .contact {
+	background: url(../img/footer_arrow_172_b.svg) no-repeat 0 100% / 172px auto;
+}
+.footer-inner .info li span, .footer-inner .info .menu .link p {
+	color: #666;
+}
+
+
+/* 최소화면 768px */
+@media screen and (min-width: 768px) {
+	main h3 {
+		font-size: 6rem;
+	}
+	main .service, main p {
+		font-size: 1.6rem;
+	}
+	main .detail-btn {
+		width: 240px; height: 50px;
+		line-height: 50px;
+		font-size: 1.8rem	;
+	}
+	main .main-project .circle1 {
+		width: 7.813vw; height: 7.813vw;
+		top: 9.115vw; right: 9.115vw;
+	}
+	main .main-project .circle2 {
+		width: 3.906vw; height: 3.906vw;
+		top: auto; left: 12.630vw; bottom: 17.188vw;
+	}
+	main .main-project .circle3 {
+		width: 5.208vw; height: 5.208vw;
+		bottom: 8.073vw; right: 18.229vw;
+	}
+	main .main-gongyuin .circle1 {
+		width: 3.906vw; height: 3.906vw;
+		top: 20.573vw; right: 8.724vw;
+	}
+	main .main-gongyuin .circle2 {
+		width: 5.208vw; height: 5.208vw;
+		top: 10.026vw; left: 8.724vw;
+	}
+	main .main-gongyuin .circle3 {
+		width: 9.115vw; height: 9.115vw;
+		bottom: 5.859vw; right: 18.229vw;
+	}
+}
+/* 최소화면 1024px */
+@media screen and (min-width: 1024px) {
+	main .detail-btn {
+		width: 318px; height: 64px;
+		line-height: 64px;
+		font-size: 2.4rem;
+		margin-top: 36px;
+	}
+	main .main-project .circle1 {
+		width: 7.813vw; height: 7.813vw;
+		top: 9.115vw; right: 9.115vw;
+	}
+	main .main-project .circle2 {
+		width: 3.906vw; height: 3.906vw;
+		top: auto; left: 12.630vw; bottom: 17.188vw;
+	}
+	main .main-project .circle3 {
+		width: 5.208vw; height: 5.208vw;
+		bottom: 8.073vw; right: 18.229vw;
+	}
+	main .main-gongyuin .circle1 {
+		width: 3.906vw; height: 3.906vw;
+		top: 20.573vw; right: 8.724vw;
+	}
+	main .main-gongyuin .circle2 {
+		width: 5.208vw; height: 5.208vw;
+		top: 10.026vw; left: 8.724vw;
+	}
+	main .main-gongyuin .circle3 {
+		width: 9.115vw; height: 9.115vw;
+		bottom: 5.859vw; right: 18.229vw;
+	}
+}
+
+/* 최소화면 1280px */
+@media screen and (min-width: 1280px) {
+	main {
+		display: flex;
+	}
+	main > div {
+		width: 50%; height: 100vh;
+	}
+	main .circle-wrap {
+		height: 100vh;
+	}
+	main .service, main p {
+		font-size: 2rem;
+	}
+	main .main-project .circle1 {
+		width: 3.125vw; height: 3.125vw;
+		top: 5.208vw; right: 7.656vw;
+	}
+	main .main-project .circle2 {
+		width: 1.563vw; height: 1.563vw;
+		left: 3.385vw; bottom: 18.750vw;
+	}
+	main .main-project .circle3 {
+		width: 2.813vw; height: 2.813vw;
+		bottom: 5.833vw; right: 12.656vw;
+	}
+	main .main-gongyuin .circle1 {
+		width: 2.083vw; height: 2.083vw;
+		top: 8.333vw; right: 2.083vw;
+	}
+	main .main-gongyuin .circle2 {
+		width: 1.563vw; height: 1.563vw;
+		top: 10.026vw; left: 8.724vw;
+	}
+	main .main-gongyuin .circle3 {
+		width: 3.646vw; height: 3.646vw;
+		bottom: 5.859vw; right: 9.896vw;
+	}
+}
