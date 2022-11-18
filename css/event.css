@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+body {
+    background-color:#fff;
+}
+.header_inner {
+    background-color:rgba(255,255,255,.95);
+}
+.logo_wh {
+    display:none;
+}
+.logo_gr {
+    display:block;
+}
+.nav_s a {
+    color:#fff;
+}
+.mobile_m span {
+    background-color:#444;
+}
+.mobile_m span:nth-of-type(n+4) {
+    background-color:#fff;
+}
+.top_menu a:first-child {
+    background-color:#613EEA;
+    border:none;
+    line-height:35px;
+}
+.top_menu a:last-child {
+    width:150px;
+    color:#613EEA;
+    border-color:#613EEA;
+}
+
+/* 메인 페이지 */
+.event-pc {display:none;}
+#main {
+    width:100%;
+    padding-bottom: 100px;
+}
+.event-inner {
+    position:relative;
+}
+.event-inner img {
+    width:100%;
+}
+.a01 {
+    width:55%; 
+    position:absolute; top:7.5%; left:50%;
+    height:auto;
+    transform:translate(-50%,0);
+}
+.a02 {
+    width:77.5%; 
+    position:absolute; bottom:1.7%; left:50%;
+    height:auto;
+    transform:translate(-50%,0);
+}
+.top-button {
+    text-align:center;
+    padding-top:50px;
+}
+.top-button img {
+    cursor:pointer;
+}
+/* 가로 해상도 768 이상 */
+@media screen and (min-width:768px){
+
+}
+/* 가로 해상도 1024 이상 */
+@media screen and (min-width:1024px){
+    
+}
+/* 가로 해상도 1300 이상 */
+@media screen and (min-width:1300px){
+    .top_menu a:first-child {
+        width:150px;
+    }
+    .event-m {display:none;}
+    .event-pc {display:block;}
+    .a01 {
+        width:14.5%; 
+        position:absolute; top:8.7%; left:20.1%;
+        transform:translate(0,0);
+    }
+    .a02 {
+        width:28.6%; 
+        position:absolute; bottom:2.1%; left:50%;
+        height:auto;
+        transform:translate(-50%,0);
+    }
+}
+/* 가로 해상도 1921 이상 */
+@media screen and (min-width:1921px){
+    .event-inner {
+        width:1920px; 
+        margin:0 auto;
+    }
+}

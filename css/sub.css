@@ -1,0 +1,456 @@
+@charset "utf-8";
+
+/* br */
+html body br.br-360 {display:block;}
+html body br.br-768 {display: none;}
+html body br.br-1024 {display:none;}
+
+/* 서비스 소개 */
+main {
+    padding-top:45px;
+}
+.service .main {
+    height:340px;
+    background-color:#6D62E5;
+    position:relative;
+    padding-top:50px;
+}
+.service .main .text-box {
+    width:320px;
+    margin:0 auto;
+    color:#fff;
+}
+.service .main .text-box p:nth-of-type(1) {
+    font-size:24px;
+    letter-spacing: -0.02em;
+    opacity:0; transition-delay:.4s;
+}
+.service .main .text-box p:nth-of-type(2) {
+    font-size:14px; line-height:21px;
+    letter-spacing: -0.02em;
+    margin-top:20px;
+    opacity:0; transition-delay:.8s;
+}
+.service .main .text-box p:nth-of-type(3) {
+    font-size:10px; line-height:15px;
+    opacity:.7;
+    width:174px;
+    word-break: keep-all;
+    opacity:0; transition-delay:1.2s;
+}
+.service .main .text-box hr {
+    width:40px; height:2px;
+    background-color:#fff;
+    margin:29px 0 25px;
+    display:block;
+    opacity:0; transform:translate(-100%,0);
+    transition-delay:.4s;
+}
+.service .main .bg-box {
+    width:134px;
+    position:absolute; bottom:28px; left:57%;
+}
+.service .main .bg-box img {
+    display:block; width:100%;
+}
+.service .section-inner {
+    text-align:center; width:320px;
+    margin:0 auto;
+    padding-top:50px;
+}
+.service .section-inner h3 {
+    font-size:20px;
+}
+.service .section-inner h3 span {
+    font-weight:700;
+    vertical-align: middle;
+}
+.service .section-inner h3 img {
+    width:35px;
+    vertical-align:middle;
+}
+.service .part {
+    position:relative;
+    padding-bottom:30px;
+    border-bottom:1px solid #C1C1C1;
+}
+.service .part .text {
+    padding-top:30px;
+}
+.service .part .text .number{
+    font-size:21px;
+    color:#54ADB0;
+}
+.service .part .text h4 {
+    font-size:16px; line-height:19px;
+    margin:10px 0 300px;
+}
+.service .part .text p {
+    font-size:10px; line-height:15px;
+    
+}
+.service .part .img {
+    width:260px;
+    position:absolute; left:50%; top:117px;
+    transform:translate(-50%,0);
+}
+.service .part03 .img {
+    top:100px;
+}
+.service .part02 .img, 
+.service .part03 .img, 
+.service .part04 .img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+.service .part .img img {
+    display:block;
+    width:100%;
+}
+
+/* FAQ */
+.faq .main {
+    padding-top:30px;
+}
+.faq h2 {
+    display:block;
+    font-size:20px;
+    margin:0 auto;
+    width:320px;
+}
+.faq h2 span {
+    vertical-align:middle;
+}
+.faq h2 img {
+    vertical-align:middle;
+    width:35px;
+}
+.faq .faq-inner {
+    width:320px;
+    margin:0 auto;
+    padding:20px 0 50px;
+}
+.faq .faq-inner li {
+    border-top:1px solid #ccc;
+    padding-left:10px;
+}
+.faq .faq-inner .question.border {
+    border-bottom:1px solid #ccc;
+}
+.faq .faq-inner .answer.border {
+    border-top:none;
+    border-bottom:1px solid #ccc;
+}
+.faq .faq-inner .question {
+    font-size:12px; line-height:52px;
+    position:relative;
+    cursor:pointer;
+}
+.faq .faq-inner .question i {
+    display:block;
+    position:absolute; top:50%; right:0;
+    transform:translate(0,-50%);
+    width:35px; height:100%;
+    cursor:pointer;
+}
+.faq .faq-inner .question i:after {
+    content:""; display:block;
+    position:absolute; top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    background:url(../img/sub04_arrow_bottom.svg) no-repeat;
+    background-size:contain;
+    width:15px; height:9px;
+}
+.faq .faq-inner .question.on i:after {
+    background:url(../img/sub04_arrow_top.svg) no-repeat;
+    background-size:contain;
+}
+.faq .faq-inner .answer {
+    background-color:#F6F7FF;
+    word-break: keep-all;
+    font-size:11px; line-height:17px;
+    padding:20px 10px 20px;
+    color:#4E4E4E;
+    display:none;
+}
+.faq .faq-inner .answer .ex {
+    font-size:10px; line-height:15px;
+    color:#888;
+}
+
+
+/* 가로 해상도 768 이상 */
+@media screen and (min-width:768px){
+    /* service */
+    main {
+        padding-top: 60px;
+    }
+    .service .main {
+        height: 680px;
+        padding-top: 100px;
+    }
+    .service .main .text-box {
+        width: 672px;
+    }
+    .service .main .text-box p:nth-of-type(1) {
+        font-size:48px;
+    }
+    .service .main .text-box p:nth-of-type(2) {
+        font-size: 28px;
+        line-height: 42px;
+        margin-top: 40px;
+    }
+    .service .main .text-box hr {
+        width: 80px;
+        height: 4px;
+        margin: 57px 0 50px;
+    }
+    .service .main .text-box p:nth-of-type(3) {
+        font-size: 20px;
+        line-height: 30px;
+        width: 345px;
+    }
+    .service .main .bg-box {
+        width: 268px;
+        bottom: 56px;
+        left: 59.8%;
+    }
+    .service .section-inner {
+        width: 640px;
+        padding-top: 100px;
+    }
+    .service .section-inner h3 {
+        font-size: 40px;
+    }
+    .service .section-inner h3 img {
+        width: 70px;
+    }
+    .service .part {
+        padding-bottom: 60px;
+    }
+    .service .part .text {
+        padding-top: 60px;
+    }
+    .service .part .text .number {
+        font-size:42px;
+    }
+    .service .part .text h4 {
+        font-size: 32px;
+        line-height: 38px;
+        margin: 20px 0 600px;
+    }
+    .service .part .text p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .service .part .img {
+        width: 520px;
+        top: 234px;
+    }
+    .service .part03 .img {
+        top:210px;
+    }
+    .service .part02 .img, 
+    .service .part03 .img, 
+    .service .part04 .img {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* FAQ */
+    .faq .main {
+        padding-top:60px;
+    }
+    .faq h2 {
+        font-size:40px;
+        width:688px;
+    }
+    .faq h2 img {
+        width:70px;
+    }
+    .faq .faq-inner {
+        width:688px;
+        padding:40px 0 100px;
+    }
+    .faq .faq-inner li {
+        padding-left:20px;
+    }
+    .faq .faq-inner .question {
+        font-size:24px; line-height:104px;
+    }
+    .faq .faq-inner .question i {
+        width:60px; 
+    }
+    .faq .faq-inner .question i:after {
+        width:20px; height:12px;
+    }
+    .faq .faq-inner .answer {
+        font-size:22px; line-height:34px;
+        padding:40px 80px 40px 20px;
+    }
+    .faq .faq-inner .answer .ex {
+        font-size:20px; line-height:30px;
+    }
+}
+/* 가로 해상도 1024 이상 */
+@media screen and (min-width:1024px){
+    html body br.br-360 {display:none;}
+    html body br.br-1024 {display:block;}
+    /* service */
+    main {
+        padding-top: 75px;
+    }
+    .service .main {
+        height: 600px;
+    }
+    .service .main .text-box {
+        width: 944px;
+    }
+    .service .main .text-box p:nth-of-type(1) {
+        font-size:40px; line-height:62px;
+    }
+    .service .main .text-box p:nth-of-type(2) {
+        font-size: 24px;
+        line-height: 38px;
+        margin-top: 18px;
+    }
+    .service .main .text-box hr {
+        margin: 40px 0;
+    }
+    .service .main .text-box p:nth-of-type(3) {
+        font-size: 16px;
+        line-height: 28px;
+        width: 100%;
+    }
+    .service .main .bg-box {
+        width: 324px;
+        bottom: 110px;
+        left: 64%;
+    }
+    .service .section-inner {
+        width: 944px;
+        padding-top: 60px;
+    }
+    .service .section-inner h3 {
+        font-size: 34px;
+    }
+    .service .section-inner h3 img {
+        width: 65px;
+    }
+    .service .part {
+        padding-bottom: 100px;
+        border:none;
+    }
+    .service .part01 {
+        padding-top:40px;
+    }
+    .service .part .left { float:left; }
+    .service .part .right { float:right; }
+    .service .part .text {
+        padding-top: 0;
+        text-align:left;
+    }
+    .service .part .text .number {
+        font-size:38px;
+    }
+    .service .part .text h4 {
+        font-size: 28px;
+        margin: 30px 0 38px;
+        padding-left:23px;
+    }
+    .service .part .text p {
+        font-size: 16px;
+        line-height: 28px;
+        padding-left:23px;
+    }
+    .service .part .img {
+        width: 420px;
+        position:static;
+        transform:translate(0,0);
+    }
+    .service .part01 .text {padding-top:80px;}
+    .service .part03 .text {padding-top:60px;}
+    .service .part05 .text {padding-top:20px;}
+    /* FAQ */
+    .faq h2 {
+        font-size:38px;
+        width:944px;
+    }
+    .faq .faq-inner {
+        width:944px;
+    }
+    .faq .faq-inner li {
+        padding-left:30px;
+    }
+    .faq .faq-inner .question {
+        font-size:18px; line-height:69px;
+    }
+    .faq .faq-inner .question i {
+        width:80px; 
+    }
+    .faq .faq-inner .answer {
+        font-size:16px; line-height:28px;
+        padding:40px 120px 40px 30px;
+    }
+    .faq .faq-inner .answer .ex {
+        font-size:14px; line-height:28px;
+    }
+}
+/* 가로 해상도 1300 이상 */
+@media screen and (min-width:1300px){
+    /* service */
+    .service .main .text-box {
+        width: 1060px;
+    }
+    .service .main .bg-box {
+        width: 367px;
+        bottom: 85px;
+        left: 58.4%;
+    }
+    .service .section-inner {
+        width: 1060px;
+        padding-top: 55px;
+    }
+    .service .section-inner h3 {
+        font-size: 38px;
+    }
+    .service .section-inner h3 img {
+        width: 70px;
+    }
+    .service .part01 {
+        padding-top:60px;
+    }
+    .service .part .text .number {
+        font-size:42px;
+    }
+    .service .part .img {
+        width: 450px;
+        position:static;
+        transform:translate(0,0);
+    }
+    .service .part01 .img {width:470px;}
+    .service .part05 .img {width:430px;}
+    .service .part01 .text {padding-top:90px;}
+    /* FAQ */
+    .faq h2 {
+        font-size:40px;
+        width:1060px;
+    }
+    .faq .faq-inner {
+        width:1060px;
+    }
+    .faq .faq-inner .question {
+        line-height:64px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
